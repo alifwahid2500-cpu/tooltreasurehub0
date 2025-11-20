@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToolTreasure Hub | Free Online Tools</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External Styles -->
     <link rel="stylesheet" href="styles.css">
+    <!-- QRious (QR Code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <!-- jsPDF (Image to PDF) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header id="header">
         <div class="container header-content">
             <div class="logo">
@@ -27,6 +34,8 @@
             </div>
         </div>
     </header>
+
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="container">
             <h1>The Ultimate <span class="highlight">Online Tool</span> Collection</h1>
@@ -34,12 +43,17 @@
             <a href="#tools-section" class="cta-btn">Start Using Tools</a>
         </div>
     </section>
+
+    <!-- TOOLS SECTION -->
     <section id="tools-section" class="tools-section">
         <div class="container">
             <div class="layout-grid">
+                <!-- SIDEBAR CATEGORIES -->
                 <aside class="sidebar">
                     <h3>Categories</h3>
                     <div class="accordion-menu" id="accordionMenu">
+                        
+                        <!-- 1. Calculators -->
                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-solid fa-calculator"></i> Calculators</button>
                             <div class="accordion-body">
@@ -50,6 +64,8 @@
                                 <button class="tool-btn" data-tool="calc-loan">Loan Calculator</button>
                             </div>
                         </div>
+
+                        <!-- 2. Converters -->
                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-solid fa-arrow-right-arrow-left"></i> Converters</button>
                             <div class="accordion-body">
@@ -59,6 +75,8 @@
                                 <button class="tool-btn" data-tool="conv-temp">Temperature</button>
                             </div>
                         </div>
+
+                        <!-- 3. Date & Time -->
                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-regular fa-clock"></i> Date & Time</button>
                             <div class="accordion-body">
@@ -67,6 +85,8 @@
                                 <button class="tool-btn" data-tool="time-sleep">Meditation Timer</button>
                             </div>
                         </div>
+
+                        <!-- 4. Generators -->
                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-solid fa-wand-magic-sparkles"></i> Generators</button>
                             <div class="accordion-body">
@@ -76,6 +96,8 @@
                                 <button class="tool-btn" data-tool="gen-lorem">Lorem Ipsum</button>
                             </div>
                         </div>
+
+                        <!-- 5. Text Tools -->
                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-solid fa-font"></i> Text Tools</button>
                             <div class="accordion-body">
@@ -85,6 +107,8 @@
                                 <button class="tool-btn" data-tool="txt-minify">Minifier (JS/CSS)</button>
                             </div>
                         </div>
+
+                        <!-- 6. Image Tools -->
                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-regular fa-image"></i> Image Tools</button>
                             <div class="accordion-body">
@@ -94,6 +118,8 @@
                                 <button class="tool-btn" data-tool="img-pdf">Image to PDF</button>
                             </div>
                         </div>
+
+                        <!-- 7. Productivity -->
                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-solid fa-list-check"></i> Productivity</button>
                             <div class="accordion-body">
@@ -104,26 +130,34 @@
                                 <button class="tool-btn" data-tool="prod-pomo">Pomodoro Timer</button>
                             </div>
                         </div>
-                        <div class="accordion-item">
+
+                         <!-- 8. Fun Tools -->
+                         <div class="accordion-item">
                             <button class="accordion-header"><i class="fa-regular fa-face-smile"></i> Fun Tools</button>
                             <div class="accordion-body">
                                 <button class="tool-btn" data-tool="fun-joke">Random Joke</button>
                                 <button class="tool-btn" data-tool="fun-quote">Random Quote</button>
                             </div>
                         </div>
+
                     </div>
                 </aside>
+
+                <!-- MAIN TOOL WORKSPACE -->
                 <main class="workspace" id="workspace">
                     <div class="empty-state">
                         <i class="fa-solid fa-toolbox"></i>
                         <h2>Select a tool to start</h2>
                         <p>Choose a category from the left menu.</p>
                     </div>
+                    <!-- Dynamic Content Loads Here -->
                     <div id="tool-container"></div>
                 </main>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-grid">
             <div class="footer-col">
@@ -145,6 +179,8 @@
             <p>&copy; 2025 ToolTreasure Hub. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- MODALS (About & Privacy) -->
     <div id="modal-overlay" class="modal-overlay">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal()">&times;</span>
@@ -152,6 +188,8 @@
             <div id="modal-body">Content</div>
         </div>
     </div>
+
+    <!-- Main Script -->
     <script src="script.js"></script>
 </body>
 </html>
